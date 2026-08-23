@@ -1,17 +1,17 @@
-# Jantar dos Filosofos em Java
+# Jantar dos Filósofos em Java
 
-Simulacao concorrente do classico problema dos filosofos jantando. Cada filosofo e executado em uma thread e precisa compartilhar dois garfos com os vizinhos sem causar deadlock.
+Simulação concorrente do clássico problema dos filósofos jantando. Cada filósofo é executado em uma thread e precisa compartilhar dois garfos com os vizinhos sem causar deadlock.
 
 ## O que o projeto demonstra
 
-- Uso de `Runnable` e `Thread` para representar concorrencia.
+- Uso de `Runnable` e `Thread` para representar concorrência.
 - Uso de `ReentrantLock` para proteger os garfos.
-- Uso de `Semaphore` com `N - 1` permissoes para reduzir a possibilidade de espera circular.
-- Atualizacao do estado dos filosofos e dos garfos no console.
+- Uso de `Semaphore` com `N - 1` permissões para reduzir a possibilidade de espera circular.
+- Atualização do estado dos filósofos e dos garfos no console.
 
 ## Como executar
 
-Prerequisito: JDK instalado e disponivel no `PATH`.
+Pré-requisito: JDK instalado e disponível no `PATH`.
 
 ```bash
 git clone https://github.com/victormalvao/Jantar-dos-filosofosBSI.git
@@ -20,16 +20,16 @@ javac -d out *.java
 java -cp out JantarDosFilosofos
 ```
 
-A simulacao continua executando para representar os ciclos de pensamento e alimentacao. Use `Ctrl+C` para encerra-la.
+A simulação continua em execução para representar os ciclos de pensamento e alimentação. Use `Ctrl+C` para encerrá-la.
 
 ## Estrutura
 
 ```text
-JantarDosFilosofos.java  # Inicializacao da simulacao
+JantarDosFilosofos.java  # Inicialização da simulação
 Filosofo.java            # Thread e regras de acesso aos garfos
-Mesa.java                # Visualizacao do estado no console
+Mesa.java                # Visualização do estado no console
 ```
 
 ## Status
 
-Projeto academico de estudo de concorrencia e sincronizacao. Nao possui build automatizado nem testes automatizados; os parametros da simulacao estao definidos diretamente no codigo.
+Projeto acadêmico de estudo de concorrência e sincronização. Não possui build automatizado nem testes automatizados; os parâmetros da simulação estão definidos diretamente no código.
